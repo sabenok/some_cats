@@ -1,0 +1,8 @@
+import Human;
+
+human = super Human;
+
+void KickCat(Cat.iface cat)
+{
+    human.kick(cat);
+}

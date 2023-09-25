@@ -1,0 +1,47 @@
+import cat;
+import human;
+
+void main()
+{
+    Human myHuman;
+    Cat myCat;
+    Food myWhiskas;
+    Bowl myBowl;
+    int attempts;
+
+    try {
+        while (myHuman.reacted() === false) {
+            myCat.meow();
+            attempts ++;
+            cat.skills.checkAttempts(attempts);
+        }
+
+        if (myHuman.alreadyFeedMyCat()) {
+            myHuman.skills.kickCat(myCat);
+            throw AlreadyFeedEx;
+        }
+
+        myHuman.skills.goTo('kitchen');
+        myCat.skills.followAndObstructAndMeow(myHuman);
+
+        myWhiskas = myHuman.grabTheFoodPack('whiskas');
+        myBowl = myHuman.skills.findTheBowl('cat');
+
+        myHuman.skills.tryFeedCat(myCat, myWhiskas, myBowl);
+    } catch (e Exception) {
+        doNothing();
+    } finally {
+        doNothing();
+    }
+}
+
+void checkAttempts(Cat.iface, attempts)
+{
+    int rand,sleepTime;
+    rand = rand(1,attempts);
+    sleepTime = rand(15,45)
+    if (attempts === rand) {
+        Cat.sleep(sleepTime);
+        throw CatTiredEx;
+    }
+}

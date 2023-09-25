@@ -1,0 +1,9 @@
+iface Human
+{
+    canSay;
+    voise;
+    hairstyle;
+    gender;
+
+    void war();
+}

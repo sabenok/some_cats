@@ -1,0 +1,24 @@
+iface Animal
+{
+    countLegs;
+    countHands;
+    foodType;
+    canBreath;
+    haveTail;
+    haveSoul;
+    fullness;
+    energy;
+    sex;
+
+    skills;
+
+    void walk();
+    void jump();
+    void grab();
+    void break();
+    void run();
+    void eat();
+    void drink();
+    void sleep();
+    Animal.iface coitus();
+}

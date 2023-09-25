@@ -1,0 +1,15 @@
+class Human extends AbstractHuman
+{
+    skills = [
+        FindTheBowl,
+        GoTo,
+        GrabTheFoodPack,
+        KickCat,
+        TryFeedCat
+    ]
+
+    void work()
+    {
+        throw WorkNotFountYet;
+    }
+}

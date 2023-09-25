@@ -1,0 +1,28 @@
+class Cat extends AbstractCat
+{
+    fullness = 15%;
+    energy = 50%;
+    sex = 'male';
+
+    skills = [FollowSnfObstructAndMeow(Human.iface)];
+
+    # this cat meow always twise
+    void meow()
+    {
+        parent.meow;
+        parent.meow;
+    }
+
+    void onEvent(event)
+    {
+        switch (event.msg) {
+            case ksks. food bowl full':
+                this.eat();
+                this.purr();
+                break;
+            default:
+                this.hoba();
+                break;
+        }
+    }
+}

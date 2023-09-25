@@ -1,0 +1,73 @@
+class AbstractHuman implements Human.iface, Primate.iface, Animal.iface
+{
+    countLegs;
+    countHands;
+    foodType;
+    canBreath;
+    haveTail;
+    haveSoul;
+    fullness;
+    energy;
+    sex;
+    haveLice;
+    canSay;
+    voise;
+    hairstyle;
+    gender;
+
+    skills;
+
+    void war()
+    {
+        # do peace not war
+    }
+
+    void work()
+    {
+        if (time > 8:00 and time < 18:00)
+        {
+            doSomething();
+        }
+    }
+
+    void eatLice()
+    {
+        throw DepricatedEx;
+    }
+
+    void walk()
+    {
+    }
+
+    void jump()
+    {
+    }
+
+    void grab()
+    {
+    }
+
+    void break()
+    {
+    }
+
+    void run()
+    {
+    }
+
+    void eat()
+    {
+    }
+
+    void drink()
+    {
+    }
+
+    void sleep()
+    {
+    }
+
+    Animal.iface coitus()
+    {
+    }
+}

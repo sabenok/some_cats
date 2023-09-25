@@ -1,0 +1,17 @@
+import Human;
+
+human = super Human;
+
+Bowl.iface FindTheBowl(destCode)
+{
+    bowlType = bowlTypeFactory(destCode);
+    bowlPlacesByType = bowlType.places;
+
+    for (i=0;i<bowlPlacesByType.lenght;i++){
+        if (bowlPlacesByType[i].exist == true) {
+            return human.skills..grab(bowlPlacesByType[i])
+        }
+    }
+
+    throw BowlNotFoundEx;
+}

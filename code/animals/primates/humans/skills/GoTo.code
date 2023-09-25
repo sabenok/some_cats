@@ -1,0 +1,11 @@
+import Human;
+
+human = super Human;
+
+void GoTo(locationCode)
+{
+    location = locationFactory(locationCode);
+    locationStrategy = locationStrategyFactory(locationCode);
+
+    locationStrategy.exec(location);
+}

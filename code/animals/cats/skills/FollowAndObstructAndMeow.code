@@ -1,0 +1,14 @@
+import Cat;
+
+cat = super Cat;
+
+void FollowAndObstructAndMeow(Human.iface human)
+{
+    int rand;
+
+    rand = rand(0,15);
+    while (cat.walk(near human)) {
+        cat.jump(human);
+        cat.meow();
+    }
+}

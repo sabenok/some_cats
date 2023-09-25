@@ -1,0 +1,16 @@
+import Human;
+
+human = super Human;
+
+void tryFeedCat(Cat.iface cat, Pack.iface foodPack, Bowl.iface bowl)
+{
+    if (human.skills.shake(foodPack) == empty) {
+        human.skills.say('fuck');
+        human.skills.addTaskToTaskTracker('buy some cat food asap');
+        throw EmptyFoodPackEx;
+    }
+
+    human.skills.openPack(foodPack);
+    human.skills.putFood(foodPack, bowl);
+    event.send(cat, 'ksks. food bowl full')
+}

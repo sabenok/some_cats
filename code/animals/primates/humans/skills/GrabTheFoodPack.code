@@ -1,0 +1,11 @@
+import Human;
+
+human = super Human;
+
+Pack.iface GrabTheFoodPack(foodCode)
+{
+    strategy = findPackStrategyByCode(foodCode);
+    pack = strategy.exec(foodCode);
+
+    return pack;
+}

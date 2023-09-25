@@ -1,0 +1,7 @@
+iface Cat
+{
+    void purr();
+    # https://memepedia.ru/kot-xoba/
+    void hoba();
+    void meow();
+}

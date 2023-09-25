@@ -1,0 +1,55 @@
+class AbstractCat implements Cat.iface, Animal.iface
+{
+    countLegs = 4;
+    countHands = 0;
+    foodType = 'meet';
+    canBreath = true;
+    haveTail = true;
+    haveSoul = true;
+
+    void purr()
+    {
+        purr;
+    }
+
+    void walk()
+    {
+    }
+
+    void jump()
+    {
+    }
+
+    void meow()
+    {
+        meow();
+    }
+
+    void grab()
+    {
+    }
+
+    void break()
+    {
+    }
+
+    void run()
+    {
+    }
+
+    void eat()
+    {
+    }
+
+    void drink()
+    {
+    }
+
+    void sleep()
+    {
+    }
+
+    Animal.iface coitus()
+    {
+    }
+}

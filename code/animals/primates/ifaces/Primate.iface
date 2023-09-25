@@ -1,0 +1,7 @@
+iface Primate
+{
+    haveLice;
+
+    void work();
+    void eatLice();
+}
